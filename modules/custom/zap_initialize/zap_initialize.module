@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains zap_initialize.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zap_initialize_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the zap_initialize module.
+    case 'help.page.zap_initialize':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Initialize zap profile tasks/modules') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function zap_initialize_theme() {
+  $theme = [];
+
+  return $theme;
+}

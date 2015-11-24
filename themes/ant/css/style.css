@@ -1,0 +1,9 @@
+body .content {
+  display: block;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border-radius: 35px;
+  background: orange;
+  color: pink; }

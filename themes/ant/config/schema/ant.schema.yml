@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Ant theme.
+
+ant.settings:
+  type: theme_settings
+  label: 'Ant settings'

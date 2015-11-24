@@ -1,0 +1,10 @@
+@import "node_modules/compass-sass-mixins/lib/compass";
+
+body {
+  .content {
+    display: block;
+    @include border-radius(35px);
+    background:orange;
+    color: pink;
+  }
+}
