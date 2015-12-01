@@ -16,7 +16,7 @@ use Drupal\user\RoleInterface;
  */
 function zap_install() {
   // Set front page to "node".
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/oitfront')->save(TRUE);
 
   // Allow visitor account creation with administrative approval.
   $user_settings = \Drupal::configFactory()->getEditable('user.settings');
@@ -92,4 +92,56 @@ function zap_install() {
     'trash',
   );
   \Drupal::service('module_installer')->install($module_list, TRUE);
+}
+
+
+/**
+ * Implements hook_install_tasks_alter().
+ */
+function zap_install_tasks_alter(&$tasks, $install_state) {
+ $tasks['install_finished']['function'] = 'zap_install_finished';
+}
+
+/**
+ * Custom installation task; perform final steps and redirect the user to the new site if there are no errors.
+ *
+ * @param $install_state
+ *   An array of information about the current installation state.
+ *
+ * @return
+ *   A message informing the user about errors if there was some.
+ */
+function zap_install_finished(&$install_state) {
+  $profile = drupal_get_profile();
+
+  // Installation profiles are always loaded last.
+  module_set_weight($profile, 1000);
+
+  // Build the router once after installing all modules.
+  // This would normally happen upon KernelEvents::TERMINATE, but since the
+  // installer does not use an HttpKernel, that event is never triggered.
+  \Drupal::service('router.builder')->rebuild();
+
+  // Run cron to populate update status tables (if available) so that users
+  // will be warned if they've installed an out of date Drupal version.
+  // Will also trigger indexing of profile-supplied content or feeds.
+  \Drupal::service('cron')->run();
+
+  if ($install_state['interactive']) {
+    // Load current user and perform final login tasks.
+    // This has to be done after drupal_flush_all_caches()
+    // to avoid session regeneration.
+    $account = User::load(1);
+    user_login_finalize($account);
+  }
+  $final_module_list = array(
+    'zap_initialize',
+  );
+  \Drupal::service('module_installer')->install($final_module_list, TRUE);
+  drupal_flush_all_caches();
+
+  $success_message = t('Congratulations, you installed @drupal!', array(
+    '@drupal' => drupal_install_profile_distribution_name(),
+  ));
+  drupal_set_message($success_message);
 }

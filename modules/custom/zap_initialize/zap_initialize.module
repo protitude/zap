@@ -31,3 +31,23 @@ function zap_initialize_theme() {
 
   return $theme;
 }
+
+/**
+ * Implements hook_menu().
+ */
+function zap_initialize_menu() {
+  /*
+   *$items['blog'] = array(
+   *  'title' => 'blogs',
+   *  'page callback' => 'blog_page',
+   *  'access arguments' => array('access content'),
+   *  'type' => MENU_SUGGESTED_ITEM,
+   *);
+   */
+  $items['oitfront'] = array(
+    'title' => 'Office of Information Technology',
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}

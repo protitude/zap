@@ -1,0 +1,7 @@
+zap.front:
+  path: '/oitfront'
+  defaults:
+    _controller: '\Drupal\zap_initialize\Controller\ZapController::zapFront'
+    _title: 'Office of Information Technology'
+  requirements:
+    _permission: 'access content'
