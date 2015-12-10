@@ -86,6 +86,7 @@ function zap_install() {
     'multiversion_ui',
     'mollom',
     'oit_features_oit_misc',
+    'oit_features_oit_page',
     'redirect',
     'responsive_image',
     'scheduler',

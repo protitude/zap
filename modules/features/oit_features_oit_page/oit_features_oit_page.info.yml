@@ -1,0 +1,18 @@
+name: Page
+description: 'Provide Page content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - file
+  - menu_ui
+  - node
+  - oit_features_oit_misc
+  - oit_features_oit_page
+  - path
+  - scheduler
+  - taxonomy
+  - text
+  - user
+package: OIT
+features:
+  bundle: oit_features

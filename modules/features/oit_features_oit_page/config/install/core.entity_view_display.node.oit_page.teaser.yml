@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oit_page.body
+    - field.field.node.oit_page.field_oit_page_category
+    - field.field.node.oit_page.field_oit_page_custom_css_js
+    - field.field.node.oit_page.field_oit_page_file_attatchment
+    - node.type.oit_page
+  module:
+    - text
+    - user
+id: node.oit_page.teaser
+targetEntityType: node
+bundle: oit_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_oit_page_category: true
+  field_oit_page_custom_css_js: true
+  field_oit_page_file_attatchment: true
