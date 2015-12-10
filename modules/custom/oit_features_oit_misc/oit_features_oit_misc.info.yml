@@ -1,0 +1,9 @@
+name: Misc
+description: 'Taxonomy features'
+type: module
+core: 8.x
+package: OIT
+features:
+  bundle: oit_features
+  required:
+    - taxonomy.vocabulary.oit_categories
