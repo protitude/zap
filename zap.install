@@ -85,6 +85,7 @@ function zap_install() {
     'masquerade',
     'multiversion_ui',
     'mollom',
+    'oit_features_oit_misc',
     'redirect',
     'responsive_image',
     'scheduler',
