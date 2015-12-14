@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tut_title_alias
+    - node.type.oit_tutorial
+id: node.oit_tutorial.field_tut_title_alias
+field_name: field_tut_title_alias
+entity_type: node
+bundle: oit_tutorial
+label: 'Title Alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

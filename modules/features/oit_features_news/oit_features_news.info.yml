@@ -1,0 +1,19 @@
+name: News
+description: 'Provide News content type and related configuration. Breaking news goes here.'
+type: module
+core: 8.x
+dependencies:
+  - file
+  - image
+  - menu_ui
+  - node
+  - oit_features_oit_misc
+  - oit_features_oit_page
+  - options
+  - path
+  - scheduler
+  - text
+  - user
+package: OIT
+features:
+  bundle: oit_features

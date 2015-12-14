@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tut_step.field_tut_step_description
+    - field.field.paragraph.tut_step.field_tut_step_image
+    - paragraphs.paragraphs_type.tut_step
+  module:
+    - image
+    - text
+id: paragraph.tut_step.default
+targetEntityType: paragraph
+bundle: tut_step
+mode: default
+content:
+  field_tut_step_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_tut_step_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  uid: true

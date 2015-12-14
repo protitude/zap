@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_category
+    - node.type.news
+    - taxonomy.vocabulary.oit_categories
+id: node.news.field_oit_page_category
+field_name: field_oit_page_category
+entity_type: node
+bundle: news
+label: Category
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oit_categories: oit_categories
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

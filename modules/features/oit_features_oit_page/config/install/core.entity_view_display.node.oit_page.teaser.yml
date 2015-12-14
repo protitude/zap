@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.oit_page.body
+    - field.field.node.oit_page.field_oit_faq
     - field.field.node.oit_page.field_oit_page_category
     - field.field.node.oit_page.field_oit_page_custom_css_js
     - field.field.node.oit_page.field_oit_page_file_attatchment
@@ -26,6 +27,7 @@ content:
   links:
     weight: 100
 hidden:
+  field_oit_faq: true
   field_oit_page_category: true
   field_oit_page_custom_css_js: true
   field_oit_page_file_attatchment: true

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_related_content
+    - node.type.oit_page
+id: node.oit_page.field_oit_page_related_content
+field_name: field_oit_page_related_content
+entity_type: node
+bundle: oit_page
+label: 'Related Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oit_page: oit_page
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

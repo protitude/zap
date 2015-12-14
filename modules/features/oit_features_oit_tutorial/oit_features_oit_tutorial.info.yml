@@ -1,0 +1,33 @@
+name: Tutorial
+description: 'Provide Tutorial content type and related configuration. Use this content type to create a new step-by-step tutorial.'
+type: module
+core: 8.x
+dependencies:
+  - entity_reference_revisions
+  - menu_ui
+  - node
+  - oit_features_news
+  - oit_features_oit_misc
+  - oit_features_oit_page
+  - options
+  - paragraphs
+  - path
+  - scheduler
+  - text
+  - user
+package: OIT
+features:
+  bundle: oit_features
+  required:
+    - core.entity_form_display.paragraph.tut_step.default
+    - core.entity_view_display.paragraph.tut_step.default
+    - field.field.paragraph.tut_step.field_tut_step_description
+    - field.field.paragraph.tut_step.field_tut_step_image
+    - field.storage.node.field_tut_computer_type
+    - field.storage.node.field_tut_footer
+    - field.storage.node.field_tut_related
+    - field.storage.node.field_tut_steps
+    - field.storage.node.field_tut_title_alias
+    - field.storage.paragraph.field_tut_step_description
+    - field.storage.paragraph.field_tut_step_image
+    - paragraphs.paragraphs_type.tut_step

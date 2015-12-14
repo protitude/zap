@@ -2,26 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.oit_page.body
-    - field.field.node.oit_page.field_oit_faq
-    - field.field.node.oit_page.field_oit_page_category
-    - field.field.node.oit_page.field_oit_page_custom_css_js
-    - field.field.node.oit_page.field_oit_page_file_attatchment
-    - field.field.node.oit_page.field_oit_page_related_content
-    - node.type.oit_page
+    - field.field.node.oit_tutorial.body
+    - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_page_related_content
+    - field.field.node.oit_tutorial.field_tut_computer_type
+    - field.field.node.oit_tutorial.field_tut_footer
+    - field.field.node.oit_tutorial.field_tut_related
+    - field.field.node.oit_tutorial.field_tut_steps
+    - field.field.node.oit_tutorial.field_tut_title_alias
+    - node.type.oit_tutorial
   module:
-    - file
     - paragraphs
     - path
     - text
-id: node.oit_page.default
+id: node.oit_tutorial.default
 targetEntityType: node
-bundle: oit_page
+bundle: oit_tutorial
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -32,9 +33,42 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_oit_faq:
+  field_oit_page_category:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_oit_page_related_content:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_tut_computer_type:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_tut_footer:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_tut_related:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_tut_steps:
     type: entity_reference_paragraphs
-    weight: 26
+    weight: 13
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -42,38 +76,16 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
-  field_oit_page_category:
+  field_tut_title_alias:
     weight: 1
     settings:
-      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-  field_oit_page_custom_css_js:
-    weight: 10
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-  field_oit_page_file_attatchment:
-    weight: 11
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-  field_oit_page_related_content:
-    weight: 27
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
   path:
     type: path
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
   promote:

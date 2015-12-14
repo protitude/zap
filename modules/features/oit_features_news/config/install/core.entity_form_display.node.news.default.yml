@@ -2,26 +2,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.oit_page.body
-    - field.field.node.oit_page.field_oit_faq
-    - field.field.node.oit_page.field_oit_page_category
-    - field.field.node.oit_page.field_oit_page_custom_css_js
-    - field.field.node.oit_page.field_oit_page_file_attatchment
-    - field.field.node.oit_page.field_oit_page_related_content
-    - node.type.oit_page
+    - field.field.node.news.body
+    - field.field.node.news.field_oit_news_front_image
+    - field.field.node.news.field_oit_news_status
+    - field.field.node.news.field_oit_page_category
+    - field.field.node.news.field_oit_page_file_attatchment
+    - field.field.node.news.field_oit_page_related_content
+    - node.type.news
   module:
     - file
-    - paragraphs
+    - image
     - path
     - text
-id: node.oit_page.default
+id: node.news.default
 targetEntityType: node
-bundle: oit_page
+bundle: news
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -29,34 +29,29 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-  field_oit_faq:
-    type: entity_reference_paragraphs
-    weight: 26
+  field_oit_news_front_image:
+    weight: 10
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-  field_oit_page_category:
+    type: image_image
+  field_oit_news_status:
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_oit_page_category:
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-  field_oit_page_custom_css_js:
-    weight: 10
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
   field_oit_page_file_attatchment:
     weight: 11
     settings:
@@ -64,7 +59,7 @@ content:
     third_party_settings: {  }
     type: file_generic
   field_oit_page_related_content:
-    weight: 27
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
@@ -80,13 +75,13 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -97,7 +92,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

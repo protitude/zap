@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_faq
+    - node.type.oit_page
+  module:
+    - entity_reference_revisions
+id: node.oit_page.field_oit_faq
+field_name: field_oit_faq
+entity_type: node
+bundle: oit_page
+label: FAQ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      oit_faq: oit_faq
+    target_bundles_drag_drop:
+      oit_faq:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
