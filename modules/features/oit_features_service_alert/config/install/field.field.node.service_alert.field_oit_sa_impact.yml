@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_sa_impact
+    - node.type.service_alert
+  module:
+    - text
+id: node.service_alert.field_oit_sa_impact
+field_name: field_oit_sa_impact
+entity_type: node
+bundle: service_alert
+label: impact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

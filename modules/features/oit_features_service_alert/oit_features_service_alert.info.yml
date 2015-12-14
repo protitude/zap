@@ -1,0 +1,34 @@
+name: 'Service Alert'
+description: 'Provide Service Alert content type and related configuration. Issue a service alert if there are any interruptions or issues with our services.'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - field_group
+  - menu_ui
+  - node
+  - oit_features_news
+  - oit_features_oit_page
+  - oit_features_oit_tutorial
+  - oit_features_service_alert
+  - options
+  - path
+  - scheduler
+  - text
+  - user
+package: OIT
+features:
+  bundle: oit_features
+  required:
+    - field.storage.node.field_oit_sa_end_date_time
+    - field.storage.node.field_oit_sa_related_content
+    - field.storage.node.field_oit_sa_start_date_time
+    - field.storage.node.field_oit_sa_status
+    - field.storage.node.field_sa_title
+    - field.storage.node.field_oit_sa_affected_buildings
+    - field.storage.node.field_oit_sa_affected_services
+    - field.storage.node.field_oit_sa_impact
+    - field.storage.node.field_oit_sa_scope
+    - field.storage.node.field_oit_sa_info_uis
+    - field.storage.node.field_oit_sa_info_vendor
+    - field.storage.node.field_oit_sa_more_info

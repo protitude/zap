@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.oit_tutorial.field_oit_page_related_content
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
+    - field.field.node.oit_tutorial.field_tut_related
     - field.field.node.oit_tutorial.field_tut_steps
     - field.field.node.oit_tutorial.field_tut_title_alias
     - node.type.oit_tutorial
@@ -33,5 +34,6 @@ hidden:
   field_oit_page_related_content: true
   field_tut_computer_type: true
   field_tut_footer: true
+  field_tut_related: true
   field_tut_steps: true
   field_tut_title_alias: true

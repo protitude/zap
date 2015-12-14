@@ -4,11 +4,14 @@ type: module
 core: 8.x
 dependencies:
   - entity_reference_revisions
+  - file
+  - image
   - menu_ui
   - node
   - oit_features_news
   - oit_features_oit_misc
   - oit_features_oit_page
+  - oit_features_oit_tutorial
   - options
   - paragraphs
   - path
