@@ -83,6 +83,7 @@ function zap_install() {
     'filter_perms',
     'honeypot',
     'inline_entity_form',
+    'kint',
     'masquerade',
     'multiversion_ui',
     'mollom',
