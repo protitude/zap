@@ -56,7 +56,7 @@ function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
     }
     if ($_REQUEST["type"] == "security_notice") {
       // $form['field_oit_page_file_attatchment']['#access'] = FALSE;
-      $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
+      $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Security Bulletin Name</h2><p>Security Bulletin Name here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
     }
   }
 }
