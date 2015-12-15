@@ -49,24 +49,41 @@ function zap_initialize_menu() {
  */
 function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if ($form_id == "node_oit_page_form") {
-    $form['oit_page_container'] = array(
+    $form['oit_page_extras'] = array(
       '#title' => t('Page Extras'),
       '#type' => 'details',
       '#group' => 'advanced',
       '#open' => 1,
       '#weight' => 100,
     );
-    $form['field_oit_page_sn_level']['#group'] = 'oit_page_container';
-    $form['field_oit_page_main_service']['#group'] = 'oit_page_container';
-    $form['field_oit_page_related_content']['#group'] = 'oit_page_container';
+    $form['oit_page_attatchment'] = array(
+      '#title' => t('File Attatchment'),
+      '#type' => 'details',
+      '#group' => 'advanced',
+      '#open' => 0,
+      '#weight' => 100,
+    );
+    $form['oit_page_css_js'] = array(
+      '#title' => t('Custom Code <advanced users only>'),
+      '#type' => 'details',
+      '#group' => 'advanced',
+      '#open' => 0,
+      '#weight' => 100,
+    );
+    $form['field_oit_page_file_attatchment']['#group'] = 'oit_page_attatchment';
+    $form['field_oit_page_custom_css_js']['#group'] = 'oit_page_css_js';
+    $form['field_oit_page_sn_level']['#group'] = 'oit_page_extras';
+    $form['field_oit_page_main_service']['#group'] = 'oit_page_extras';
+    $form['field_oit_page_related_content']['#group'] = 'oit_page_extras';
+    $form['field_oit_page_category']['#group'] = 'oit_page_extras';
     // ksm($form);
     if ($_REQUEST["type"] == "service") {
-      $form['oit_page_container']['#title'] = t('Service Extras');
+      $form['oit_page_extras']['#title'] = t('Service Extras');
       $form['field_oit_page_sn_level']['#access'] = FALSE;
       $form['body']['widget'][0]['#default_value'] = '<h2>Features</h2><p>Features here.</p><h2>Related Policies</h2><p>Policies here</p><h2>Benefits</h2><p>Benefits here</p><h2>Cost</h2><p>Cost here</p><h2>Who can get it</h2><p>Who can get it here</p><h2>How to get it</h2><p>how to get it here</p><h2>Related Policies</h2><p>related policies here</p>';
     }
     if ($_REQUEST["type"] == "security_notice") {
-      $form['oit_page_container']['#title'] = t('Security Notice Extras');
+      $form['oit_page_extras']['#title'] = t('Security Notice Extras');
       $form['field_oit_page_main_service']['#access'] = FALSE;
       $form['field_oit_page_related_content']['#access'] = FALSE;
       $form['field_oit_faq']['#access'] = FALSE;

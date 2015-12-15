@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.oit_page.field_oit_page_main_service
     - field.field.node.oit_page.field_oit_page_related_content
     - field.field.node.oit_page.field_oit_page_service_related
+    - field.field.node.oit_page.field_oit_page_sn_level
     - node.type.oit_page
   module:
     - text
@@ -37,3 +38,4 @@ hidden:
   field_oit_page_main_service: true
   field_oit_page_related_content: true
   field_oit_page_service_related: true
+  field_oit_page_sn_level: true
