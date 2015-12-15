@@ -22,7 +22,7 @@ third_party_settings:
     use_vertical_tabs: true
 name: Page
 type: oit_page
-description: 'General pages or pick from the following for more specific categories: <a href="/oit/node/add/oit_page?type=service">Service</a>, <a href="oit/node/add/oit_page?type=security_notice">security notice</a>.'
+description: 'General pages or pick from the following for more specific categories: <a href="/oit/node/add/oit_page?type=service">Service</a>, <a href="/oit/node/add/oit_page?type=security_notice">security notice</a>.'
 help: ''
 new_revision: null
 preview_mode: 1

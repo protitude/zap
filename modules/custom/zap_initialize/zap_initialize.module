@@ -49,13 +49,27 @@ function zap_initialize_menu() {
  */
 function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if ($form_id == "node_oit_page_form") {
+    $form['oit_page_container'] = array(
+      '#title' => t('Page Extras'),
+      '#type' => 'details',
+      '#group' => 'advanced',
+      '#open' => 1,
+      '#weight' => 100,
+    );
+    $form['field_oit_page_sn_level']['#group'] = 'oit_page_container';
+    $form['field_oit_page_main_service']['#group'] = 'oit_page_container';
+    $form['field_oit_page_related_content']['#group'] = 'oit_page_container';
     // ksm($form);
     if ($_REQUEST["type"] == "service") {
-      // $form['field_oit_page_file_attatchment']['#access'] = FALSE;
+      $form['oit_page_container']['#title'] = t('Service Extras');
+      $form['field_oit_page_sn_level']['#access'] = FALSE;
       $form['body']['widget'][0]['#default_value'] = '<h2>Features</h2><p>Features here.</p><h2>Related Policies</h2><p>Policies here</p><h2>Benefits</h2><p>Benefits here</p><h2>Cost</h2><p>Cost here</p><h2>Who can get it</h2><p>Who can get it here</p><h2>How to get it</h2><p>how to get it here</p><h2>Related Policies</h2><p>related policies here</p>';
     }
     if ($_REQUEST["type"] == "security_notice") {
-      // $form['field_oit_page_file_attatchment']['#access'] = FALSE;
+      $form['oit_page_container']['#title'] = t('Security Notice Extras');
+      $form['field_oit_page_main_service']['#access'] = FALSE;
+      $form['field_oit_page_related_content']['#access'] = FALSE;
+      $form['field_oit_faq']['#access'] = FALSE;
       $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Security Bulletin Name</h2><p>Security Bulletin Name here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
     }
   }

@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.oit_page.field_oit_page_main_service
     - field.field.node.oit_page.field_oit_page_related_content
     - field.field.node.oit_page.field_oit_page_service_related
+    - field.field.node.oit_page.field_oit_page_sn_level
     - node.type.oit_page
   module:
     - entity_reference_revisions
     - file
+    - options
     - text
     - user
 id: node.oit_page.default
@@ -70,6 +72,12 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_oit_page_sn_level:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   links:
     weight: 100
 hidden:
