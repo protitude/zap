@@ -3,13 +3,18 @@ description: 'Provide News content type and related configuration. Breaking news
 type: module
 core: 8.x
 dependencies:
+  - datetime
+  - entity_reference_revisions
+  - field_group
   - file
   - image
   - menu_ui
   - node
+  - oit_features_news
   - oit_features_oit_misc
   - oit_features_oit_page
   - options
+  - paragraphs
   - path
   - scheduler
   - text
