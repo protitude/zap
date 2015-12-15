@@ -54,5 +54,9 @@ function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
       // $form['field_oit_page_file_attatchment']['#access'] = FALSE;
       $form['body']['widget'][0]['#default_value'] = '<h2>Features</h2><p>Features here.</p><h2>Related Policies</h2><p>Policies here</p><h2>Benefits</h2><p>Benefits here</p><h2>Cost</h2><p>Cost here</p><h2>Who can get it</h2><p>Who can get it here</p><h2>How to get it</h2><p>how to get it here</p><h2>Related Policies</h2><p>related policies here</p>';
     }
+    if ($_REQUEST["type"] == "security_notice") {
+      // $form['field_oit_page_file_attatchment']['#access'] = FALSE;
+      $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
+    }
   }
 }

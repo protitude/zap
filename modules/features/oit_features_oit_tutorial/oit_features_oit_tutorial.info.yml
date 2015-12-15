@@ -3,7 +3,9 @@ description: 'Provide Tutorial content type and related configuration. Use this 
 type: module
 core: 8.x
 dependencies:
+  - datetime
   - entity_reference_revisions
+  - field_group
   - file
   - image
   - menu_ui
