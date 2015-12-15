@@ -89,12 +89,9 @@ content:
     type: boolean_checkbox
   field_oit_page_related_content:
     weight: 12
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
   path:
     type: path
     weight: 6
