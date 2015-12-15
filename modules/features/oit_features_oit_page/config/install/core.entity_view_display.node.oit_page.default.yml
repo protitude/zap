@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.oit_page.field_oit_page_category
     - field.field.node.oit_page.field_oit_page_custom_css_js
     - field.field.node.oit_page.field_oit_page_file_attatchment
+    - field.field.node.oit_page.field_oit_page_main_service
     - field.field.node.oit_page.field_oit_page_related_content
     - node.type.oit_page
   module:
@@ -52,6 +53,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_default
+  field_oit_page_main_service:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_oit_page_related_content:
     weight: 106
     label: above

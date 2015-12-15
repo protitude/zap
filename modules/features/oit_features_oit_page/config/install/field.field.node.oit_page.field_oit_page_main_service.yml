@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_main_service
+    - node.type.oit_page
+id: node.oit_page.field_oit_page_main_service
+field_name: field_oit_page_main_service
+entity_type: node
+bundle: oit_page
+label: 'Is this the main service page?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'main service'
+  off_label: 'not a main service'
+field_type: boolean

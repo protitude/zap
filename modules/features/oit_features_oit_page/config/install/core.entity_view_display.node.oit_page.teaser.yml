@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.oit_page.field_oit_page_category
     - field.field.node.oit_page.field_oit_page_custom_css_js
     - field.field.node.oit_page.field_oit_page_file_attatchment
+    - field.field.node.oit_page.field_oit_page_related_content
     - node.type.oit_page
   module:
     - text
@@ -31,3 +32,4 @@ hidden:
   field_oit_page_category: true
   field_oit_page_custom_css_js: true
   field_oit_page_file_attatchment: true
+  field_oit_page_related_content: true

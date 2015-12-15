@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.oit_page.field_oit_page_category
     - field.field.node.oit_page.field_oit_page_custom_css_js
     - field.field.node.oit_page.field_oit_page_file_attatchment
+    - field.field.node.oit_page.field_oit_page_main_service
     - field.field.node.oit_page.field_oit_page_related_content
     - node.type.oit_page
   module:
@@ -63,6 +64,12 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_oit_page_main_service:
+    weight: 28
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
   field_oit_page_related_content:
     weight: 27
     settings:

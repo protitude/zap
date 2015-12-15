@@ -3,12 +3,16 @@ description: 'Provide Page content type and related configuration. '
 type: module
 core: 8.x
 dependencies:
+  - datetime
   - entity_reference_revisions
+  - field_group
   - file
+  - image
   - menu_ui
   - node
   - oit_features_oit_misc
   - oit_features_oit_page
+  - options
   - paragraphs
   - path
   - scheduler
