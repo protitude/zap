@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.oit_page.field_oit_page_file_attatchment
     - field.field.node.oit_page.field_oit_page_main_service
     - field.field.node.oit_page.field_oit_page_related_content
+    - field.field.node.oit_page.field_oit_page_service_related
     - node.type.oit_page
   module:
     - file
@@ -111,5 +112,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_oit_page_service_related: true
   publish_on: true
   unpublish_on: true
