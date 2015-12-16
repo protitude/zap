@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.oit_tutorial.body
     - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_page_file_attatchment
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.oit_tutorial.field_tut_title_alias
     - node.type.oit_tutorial
   module:
+    - file
     - paragraphs
     - path
     - text
@@ -40,6 +42,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_oit_page_file_attatchment:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   field_tut_computer_type:
     weight: 11
     settings: {  }

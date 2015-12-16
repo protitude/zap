@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.oit_tutorial.body
     - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_page_file_attatchment
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
@@ -12,6 +13,7 @@ dependencies:
     - node.type.oit_tutorial
   module:
     - entity_reference_revisions
+    - file
     - options
     - text
     - user
@@ -33,6 +35,12 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_oit_page_file_attatchment:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   field_tut_computer_type:
     weight: 0
     label: hidden
