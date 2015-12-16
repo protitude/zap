@@ -6,6 +6,7 @@ dependencies:
   - entity_reference_revisions
   - file
   - image
+  - oit_features_oit_misc
   - options
   - paragraphs
   - path
@@ -20,4 +21,10 @@ features:
     - core.entity_form_display.user.user.default
     - core.entity_view_display.user.user.default
     - field.field.user.user.field_user_department
+    - field.field.user.user.field_user_affiliation
+    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_phone
     - field.storage.user.field_user_department
+    - field.storage.user.field_user_affiliation
+    - field.storage.user.field_user_name
+    - field.storage.user.field_user_phone

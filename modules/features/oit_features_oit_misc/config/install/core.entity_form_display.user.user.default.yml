@@ -2,7 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_user_affiliation
     - field.field.user.user.field_user_department
+    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_phone
     - field.field.user.user.user_picture
   module:
     - image
@@ -13,25 +16,54 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
   contact:
-    weight: 5
-  field_user_department:
     weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  field_user_affiliation:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_user_department:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_user_phone:
+    weight: 4
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   language:
-    weight: 0
-  timezone:
     weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
+    weight: 5
 hidden: {  }
