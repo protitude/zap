@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.service_alert.field_oit_sa_info_uis
     - field.field.node.service_alert.field_oit_sa_info_vendor
     - field.field.node.service_alert.field_oit_sa_more_info
-    - field.field.node.service_alert.field_oit_sa_related_content
     - field.field.node.service_alert.field_oit_sa_scope
     - field.field.node.service_alert.field_oit_sa_start_date_time
     - field.field.node.service_alert.field_oit_sa_status
@@ -101,14 +100,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-  field_oit_sa_related_content:
-    weight: 10
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
   field_oit_sa_scope:
     weight: 12
     settings:

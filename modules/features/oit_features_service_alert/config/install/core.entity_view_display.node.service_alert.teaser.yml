@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.service_alert.field_oit_sa_info_uis
     - field.field.node.service_alert.field_oit_sa_info_vendor
     - field.field.node.service_alert.field_oit_sa_more_info
-    - field.field.node.service_alert.field_oit_sa_related_content
     - field.field.node.service_alert.field_oit_sa_scope
     - field.field.node.service_alert.field_oit_sa_start_date_time
     - field.field.node.service_alert.field_oit_sa_status
@@ -42,7 +41,6 @@ hidden:
   field_oit_sa_info_uis: true
   field_oit_sa_info_vendor: true
   field_oit_sa_more_info: true
-  field_oit_sa_related_content: true
   field_oit_sa_scope: true
   field_oit_sa_start_date_time: true
   field_oit_sa_status: true
