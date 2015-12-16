@@ -5,11 +5,10 @@ core: 8.x
 dependencies:
   - datetime
   - field_group
+  - file
   - menu_ui
   - node
-  - oit_features_news
   - oit_features_oit_page
-  - oit_features_oit_tutorial
   - oit_features_service_alert
   - options
   - path

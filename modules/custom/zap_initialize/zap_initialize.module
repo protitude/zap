@@ -95,4 +95,17 @@ function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
       $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Security Bulletin Name</h2><p>Security Bulletin Name here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
     }
   }
+  if ($form_id == "node_oit_tutorial_form") {
+    $form['oit_page_extras'] = array(
+      '#title' => t('Tutorial Extras'),
+      '#type' => 'details',
+      '#group' => 'advanced',
+      '#open' => 1,
+      '#weight' => 100,
+    );
+    $form['field_tut_related']['#group'] = 'oit_page_extras';
+    $form['field_tut_computer_type']['#group'] = 'oit_page_extras';
+    $form['field_oit_page_file_attatchment']['#group'] = 'oit_page_extras';
+    ksm($form);
+  }
 }

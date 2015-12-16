@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.oit_tutorial.body
     - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_page_file_attatchment
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
@@ -30,6 +31,7 @@ content:
     weight: 100
 hidden:
   field_oit_page_category: true
+  field_oit_page_file_attatchment: true
   field_tut_computer_type: true
   field_tut_footer: true
   field_tut_related: true

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.service_alert.body
+    - field.field.node.service_alert.field_oit_page_file_attatchment
     - field.field.node.service_alert.field_oit_sa_affected_buildings
     - field.field.node.service_alert.field_oit_sa_affected_services
     - field.field.node.service_alert.field_oit_sa_end_date_time
@@ -17,6 +18,7 @@ dependencies:
     - node.type.service_alert
   module:
     - datetime
+    - file
     - options
     - text
     - user
@@ -31,6 +33,12 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_oit_page_file_attatchment:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   field_oit_sa_affected_buildings:
     weight: 110
     label: above
