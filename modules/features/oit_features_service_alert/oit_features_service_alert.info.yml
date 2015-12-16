@@ -21,7 +21,6 @@ features:
   bundle: oit_features
   required:
     - field.storage.node.field_oit_sa_end_date_time
-    - field.storage.node.field_oit_sa_related_content
     - field.storage.node.field_oit_sa_start_date_time
     - field.storage.node.field_oit_sa_status
     - field.storage.node.field_sa_title
