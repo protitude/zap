@@ -14,4 +14,21 @@ use Drupal\user\RoleInterface;
 function zap_initialize_install() {
   \Drupal::configFactory()->getEditable('system.site')->set('name', 'Office of Information Technology')->save(TRUE);
   \Drupal::configFactory()->getEditable('system.site')->set('mail', 'help@colorado.edu')->save(TRUE);
+  // $terms = array(
+  //   'Page Category',
+  //   'News',
+  //   'Service',
+  //   'Tutorial'
+  // );
+  // _zap_taxonomy_terms_multiple($terms, 'oit_categories');
+}
+
+function _zap_taxonomy_terms_multiple($terms, $vid) {
+  foreach ($terms as $term) {
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+      'vid' => $vid,
+      'name' => $term,
+    ]);
+    $new_term->save();
+  }
 }
