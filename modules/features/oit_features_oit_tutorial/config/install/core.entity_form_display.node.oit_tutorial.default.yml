@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.oit_tutorial.body
     - field.field.node.oit_tutorial.field_oit_page_category
-    - field.field.node.oit_tutorial.field_oit_page_related_content
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
@@ -35,14 +34,6 @@ content:
     third_party_settings: {  }
   field_oit_page_category:
     weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-  field_oit_page_related_content:
-    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60

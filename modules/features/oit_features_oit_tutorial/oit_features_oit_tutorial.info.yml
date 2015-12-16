@@ -10,7 +10,6 @@ dependencies:
   - image
   - menu_ui
   - node
-  - oit_features_news
   - oit_features_oit_misc
   - oit_features_oit_page
   - oit_features_oit_tutorial
@@ -23,6 +22,11 @@ dependencies:
 package: OIT
 features:
   bundle: oit_features
+  excluded:
+    - core.entity_form_display.node.service_alert.default
+    - core.entity_view_display.node.service_alert.default
+    - core.entity_view_display.node.service_alert.teaser
+    - field.field.node.service_alert.field_oit_sa_related_content
   required:
     - core.entity_form_display.paragraph.tut_step.default
     - core.entity_view_display.paragraph.tut_step.default
