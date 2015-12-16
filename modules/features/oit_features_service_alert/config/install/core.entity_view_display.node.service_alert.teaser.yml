@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.service_alert.body
+    - field.field.node.service_alert.field_oit_page_file_attatchment
     - field.field.node.service_alert.field_oit_sa_affected_buildings
     - field.field.node.service_alert.field_oit_sa_affected_services
     - field.field.node.service_alert.field_oit_sa_end_date_time
@@ -34,6 +35,7 @@ content:
   links:
     weight: 100
 hidden:
+  field_oit_page_file_attatchment: true
   field_oit_sa_affected_buildings: true
   field_oit_sa_affected_services: true
   field_oit_sa_end_date_time: true

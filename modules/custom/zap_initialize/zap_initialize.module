@@ -61,15 +61,6 @@ function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
     $form['field_oit_page_main_service']['#group'] = 'oit_page_extras';
     $form['field_oit_page_related_content']['#group'] = 'oit_page_extras';
     $form['field_oit_page_category']['#group'] = 'oit_page_extras';
-    // Group for attatchment field
-    $form['oit_page_attatchment'] = array(
-      '#title' => t('File Attatchment'),
-      '#type' => 'details',
-      '#group' => 'advanced',
-      '#open' => 0,
-      '#weight' => 100,
-    );
-    $form['field_oit_page_file_attatchment']['#group'] = 'oit_page_attatchment';
     // Group for custom code
     $form['oit_page_css_js'] = array(
       '#title' => t('Custom Code <advanced users only>'),
@@ -106,6 +97,6 @@ function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
     $form['field_tut_related']['#group'] = 'oit_page_extras';
     $form['field_tut_computer_type']['#group'] = 'oit_page_extras';
     $form['field_oit_page_file_attatchment']['#group'] = 'oit_page_extras';
-    ksm($form);
+    // ksm($form);
   }
 }
