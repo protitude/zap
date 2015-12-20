@@ -3,6 +3,6 @@ status: true
 dependencies: {  }
 name: 'OIT Categories'
 vid: oit_categories
-description: 'General oit categories.'
-hierarchy: 0
+description: 'Categories shared across content types.'
+hierarchy: 1
 weight: 0
