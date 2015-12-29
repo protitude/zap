@@ -16,7 +16,7 @@ bundle: user
 mode: default
 content:
   account:
-    weight: 0
+    weight: 4
     settings: {  }
     third_party_settings: {  }
   contact:
@@ -25,28 +25,28 @@ content:
     third_party_settings: {  }
   field_user_affiliation:
     type: string_textfield
-    weight: 3
+    weight: 2
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_user_department:
     type: string_textfield
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_user_name:
     type: string_textfield
-    weight: 1
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_user_phone:
     type: string_textfield
-    weight: 4
+    weight: 3
     settings:
       size: 60
       placeholder: ''

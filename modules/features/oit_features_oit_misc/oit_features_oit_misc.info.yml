@@ -16,6 +16,8 @@ dependencies:
 package: OIT
 features:
   bundle: oit_features
+  excluded:
+    - core.entity_view_display.user.user.compact
   required:
     - taxonomy.vocabulary.oit_categories
     - core.entity_form_display.user.user.default
