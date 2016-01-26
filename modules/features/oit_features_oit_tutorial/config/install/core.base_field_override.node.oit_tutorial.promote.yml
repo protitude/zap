@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - node.type.oit_tutorial
+_core:
+  default_config_hash: GzxM0mgomgBhavB0VH9Fs49CPEabqyTVJSCggSEXkag
 id: node.oit_tutorial.promote
 field_name: promote
 entity_type: node

@@ -6,6 +6,8 @@ dependencies:
     - node.type.news
   module:
     - file
+_core:
+  default_config_hash: SA2DFTGuspBHI7kiI7vTnOUyYMWkR0uG8Gky6sCVKv4
 id: node.news.field_oit_page_file_attatchment
 field_name: field_oit_page_file_attatchment
 entity_type: node

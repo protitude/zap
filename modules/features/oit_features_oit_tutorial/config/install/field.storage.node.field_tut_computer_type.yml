@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: 5T2FtlnO1tgRxa7aM5W_XEWB_FPeCrdzMiXKPN1jdxE
 id: node.field_tut_computer_type
 field_name: field_tut_computer_type
 entity_type: node

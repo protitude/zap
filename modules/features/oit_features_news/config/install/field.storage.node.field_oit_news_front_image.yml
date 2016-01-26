@@ -5,6 +5,8 @@ dependencies:
     - file
     - image
     - node
+_core:
+  default_config_hash: adNPOz9HGwAnQBjG5WQyC00dEqiUK2qnVmlw4fKBD3M
 id: node.field_oit_news_front_image
 field_name: field_oit_news_front_image
 entity_type: node

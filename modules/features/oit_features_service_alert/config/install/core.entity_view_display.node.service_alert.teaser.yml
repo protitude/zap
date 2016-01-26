@@ -20,6 +20,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: kILJsbyq2KIwP37dSflmfn4IchT7CJRVm6kO889o3UM
 id: node.service_alert.teaser
 targetEntityType: node
 bundle: service_alert

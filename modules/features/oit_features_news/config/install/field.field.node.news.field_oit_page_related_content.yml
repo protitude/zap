@@ -5,6 +5,8 @@ dependencies:
     - field.storage.node.field_oit_page_related_content
     - node.type.news
     - node.type.oit_page
+_core:
+  default_config_hash: iYeekN00TRaiiIUk6Cq_fVN7MXzqY5Pb3FVRZguCQWQ
 id: node.news.field_oit_page_related_content
 field_name: field_oit_page_related_content
 entity_type: node

@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_oit_sa_affected_buildings
     - node.type.service_alert
+_core:
+  default_config_hash: W21CBOOka75Akgk8LvR4Neg_QgMXhSxcjCL9Ughkgqc
 id: node.service_alert.field_oit_sa_affected_buildings
 field_name: field_oit_sa_affected_buildings
 entity_type: node

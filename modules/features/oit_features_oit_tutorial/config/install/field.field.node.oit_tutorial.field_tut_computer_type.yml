@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_tutorial
   module:
     - options
+_core:
+  default_config_hash: hldT3tiI77qovJlhdeV5q0OLPJ1UJf76x-wl0sfuW6g
 id: node.oit_tutorial.field_tut_computer_type
 field_name: field_tut_computer_type
 entity_type: node

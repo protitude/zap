@@ -1,5 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: _pwHsKpCHnhxG6HjA5hezYckHFezL0cFxNqK4hZf28Y
 id: oit_faq
 label: faq

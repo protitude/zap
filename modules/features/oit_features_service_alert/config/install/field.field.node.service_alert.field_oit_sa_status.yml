@@ -6,6 +6,8 @@ dependencies:
     - node.type.service_alert
   module:
     - options
+_core:
+  default_config_hash: K2boqTgM_aJS9cgsDEGJDIiv4hrID_pMN_ZWvrf6oBw
 id: node.service_alert.field_oit_sa_status
 field_name: field_oit_sa_status
 entity_type: node

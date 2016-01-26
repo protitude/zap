@@ -17,6 +17,8 @@ dependencies:
     - paragraphs
     - path
     - text
+_core:
+  default_config_hash: ULbpmHxNaEpwTSMQHbw44bUedlW6_3PJ0eKE2hj1iIo
 id: node.oit_page.default
 targetEntityType: node
 bundle: oit_page
@@ -47,12 +49,9 @@ content:
     third_party_settings: {  }
   field_oit_page_category:
     weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
   field_oit_page_custom_css_js:
     weight: 8
     settings:

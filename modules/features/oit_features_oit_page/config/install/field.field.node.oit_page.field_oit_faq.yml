@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_page
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: QMcHYBsO89yQzv9m1XV9_qMbcrweWEGNPta7e1b9vm4
 id: node.oit_page.field_oit_faq
 field_name: field_oit_faq
 entity_type: node

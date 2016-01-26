@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_page
   module:
     - options
+_core:
+  default_config_hash: PH95cOAj3ZmdpTOJ2lfXODQ3SHCfdvMc6JpffoXo3zU
 id: node.oit_page.field_oit_page_sn_level
 field_name: field_oit_page_sn_level
 entity_type: node

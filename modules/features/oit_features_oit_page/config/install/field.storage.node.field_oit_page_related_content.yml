@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: gUa0d65fDuRbH5z8Tba2eCdFAvExaDLU3JBT7P44jaI
 id: node.field_oit_page_related_content
 field_name: field_oit_page_related_content
 entity_type: node

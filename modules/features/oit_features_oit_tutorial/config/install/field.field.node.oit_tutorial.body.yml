@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_tutorial
   module:
     - text
+_core:
+  default_config_hash: foiYbgEjYHSGR5j-M_IArmhN3Gif3zII2xyc0z9uNOM
 id: node.oit_tutorial.body
 field_name: body
 entity_type: node

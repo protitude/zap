@@ -8,6 +8,8 @@ dependencies:
   module:
     - image
     - text
+_core:
+  default_config_hash: wg7uJ6fTjikICHyaAa2J-fTe1I1GzjHCrTnwDFrD4xU
 id: paragraph.tut_step.default
 targetEntityType: paragraph
 bundle: tut_step

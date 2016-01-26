@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: KQzqB6xsK1wsfoSt3ivSaho-wGMTYk-W_djWERHc4Pk
 id: paragraph.field_oit_faq_section_title
 field_name: field_oit_faq_section_title
 entity_type: paragraph

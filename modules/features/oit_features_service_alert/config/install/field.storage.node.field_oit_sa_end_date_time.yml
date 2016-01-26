@@ -4,6 +4,8 @@ dependencies:
   module:
     - datetime
     - node
+_core:
+  default_config_hash: 4bgc24XTuFHKq2TZCTOuP6Aj4QRyWyTgaIN-4kz_u6I
 id: node.field_oit_sa_end_date_time
 field_name: field_oit_sa_end_date_time
 entity_type: node

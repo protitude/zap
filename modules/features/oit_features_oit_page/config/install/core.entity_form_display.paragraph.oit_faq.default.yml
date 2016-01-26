@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.oit_faq
   module:
     - text
+_core:
+  default_config_hash: xtMCdXiqhDjoIJcZ7GSxvC_L6h_uCgQBNHZC7imvoyI
 id: paragraph.oit_faq.default
 targetEntityType: paragraph
 bundle: oit_faq

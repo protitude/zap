@@ -4,6 +4,8 @@ dependencies:
   module:
     - paragraphs
     - text
+_core:
+  default_config_hash: kRtyJyTFpDbPH94x9UuydJh4kbGEEikCGtQqlL2j3Iw
 id: paragraph.field_oit_faq_body
 field_name: field_oit_faq_body
 entity_type: paragraph

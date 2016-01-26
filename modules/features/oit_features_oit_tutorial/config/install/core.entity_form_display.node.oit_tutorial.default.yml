@@ -16,6 +16,8 @@ dependencies:
     - paragraphs
     - path
     - text
+_core:
+  default_config_hash: wxHA-h3BiUt0ckXsrRFmXkjKZkGrYKaotGQ4CoYg2Ww
 id: node.oit_tutorial.default
 targetEntityType: node
 bundle: oit_tutorial
@@ -36,12 +38,9 @@ content:
     third_party_settings: {  }
   field_oit_page_category:
     weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
   field_oit_page_file_attatchment:
     weight: 26
     settings:

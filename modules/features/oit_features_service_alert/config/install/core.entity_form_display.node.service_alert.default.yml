@@ -37,6 +37,8 @@ third_party_settings:
         id: ''
         classes: ''
         required_fields: false
+_core:
+  default_config_hash: odFDI0gymZ7wSOOuERB5Br0ItzN18Z-6LcJDQMQzZlI
 id: node.service_alert.default
 targetEntityType: node
 bundle: service_alert

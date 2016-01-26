@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: fUWnMoR8tAfoJ4lYxFU1YcTpL1nfVEgy8YgFyVZx1qE
 id: node.field_oit_sa_more_info
 field_name: field_oit_sa_more_info
 entity_type: node

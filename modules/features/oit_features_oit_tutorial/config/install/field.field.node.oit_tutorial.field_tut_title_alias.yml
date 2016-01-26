@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_tut_title_alias
     - node.type.oit_tutorial
+_core:
+  default_config_hash: DWedPmuHwaIlAICW94P6lW5g_yUPqsyfQbdOIRwfrzQ
 id: node.oit_tutorial.field_tut_title_alias
 field_name: field_tut_title_alias
 entity_type: node

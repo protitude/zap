@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_oit_page_related_content
     - node.type.oit_page
+_core:
+  default_config_hash: GrJ5EIDCm7dR5EU-tfT7ls5qHAYePMIzXTzAETzSNcc
 id: node.oit_page.field_oit_page_related_content
 field_name: field_oit_page_related_content
 entity_type: node

@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: yRB6BqLmPB24jInY6t7PN5euIk2Etn4QVDuq5dETYds
 name: 'OIT Categories'
 vid: oit_categories
 description: 'Categories shared across content types.'

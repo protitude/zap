@@ -13,6 +13,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: EZnF5fy6-HplDdzyzeLXnUA9sEtT8JRnpoHHgZnLNP8
 id: node.news.teaser
 targetEntityType: node
 bundle: news

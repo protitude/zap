@@ -6,6 +6,8 @@ dependencies:
     - paragraphs.paragraphs_type.tut_step
   module:
     - image
+_core:
+  default_config_hash: SfhE4qA2uc3r9N7GdGsK5tbX1xji0qS-jxq6q8YqXkE
 id: paragraph.tut_step.field_tut_step_image
 field_name: field_tut_step_image
 entity_type: paragraph

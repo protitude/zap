@@ -5,6 +5,8 @@ dependencies:
     - file
     - image
     - paragraphs
+_core:
+  default_config_hash: Khos7kM8kQg7nKIos_4C2p_lZ062geAjhdNOdOTo2_Q
 id: paragraph.field_tut_step_image
 field_name: field_tut_step_image
 entity_type: paragraph

@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: ws4Sp1kKkYmiiKYVesqA-6CMOjkj1yN-ilew9ybXZbA
 id: node.field_tut_footer
 field_name: field_tut_footer
 entity_type: node

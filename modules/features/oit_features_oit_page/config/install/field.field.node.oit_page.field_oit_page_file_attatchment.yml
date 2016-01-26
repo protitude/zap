@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_page
   module:
     - file
+_core:
+  default_config_hash: gni6nXlCZK5bhH5chM5H95wUUf44K8WJ7bQsihlMVAM
 id: node.oit_page.field_oit_page_file_attatchment
 field_name: field_oit_page_file_attatchment
 entity_type: node

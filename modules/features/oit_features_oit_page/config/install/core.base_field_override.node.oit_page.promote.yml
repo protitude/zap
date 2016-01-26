@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - node.type.oit_page
+_core:
+  default_config_hash: AAugIZ1llig22N-S18oPXtkIv7FTp7lZQXaa-xphUiU
 id: node.oit_page.promote
 field_name: promote
 entity_type: node

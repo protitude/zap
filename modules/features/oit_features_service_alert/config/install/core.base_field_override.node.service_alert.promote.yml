@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - node.type.service_alert
+_core:
+  default_config_hash: g8RGo3YEpNrBMnmzHzmKh9dKU4oS1YnExwH5SlKMA2w
 id: node.service_alert.promote
 field_name: promote
 entity_type: node

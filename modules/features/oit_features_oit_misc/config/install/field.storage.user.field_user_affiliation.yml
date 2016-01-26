@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: xQHvjeWIPx1yy3HdwdMV3nGDjup-xZAQASzrz9GNsJw
 id: user.field_user_affiliation
 field_name: field_user_affiliation
 entity_type: user

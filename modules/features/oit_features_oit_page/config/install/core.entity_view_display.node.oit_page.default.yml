@@ -18,6 +18,8 @@ dependencies:
     - options
     - text
     - user
+_core:
+  default_config_hash: 5Pk3g8gGZw7FclVSCuNMICweuu3bdf5R2rn2iDYZ4wo
 id: node.oit_page.default
 targetEntityType: node
 bundle: oit_page

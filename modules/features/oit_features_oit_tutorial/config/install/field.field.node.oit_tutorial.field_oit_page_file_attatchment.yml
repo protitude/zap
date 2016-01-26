@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_tutorial
   module:
     - file
+_core:
+  default_config_hash: ULzURQVB1e0XBaEJ31_9PTHVG6TUN_LS8clxf1wYgkY
 id: node.oit_tutorial.field_oit_page_file_attatchment
 field_name: field_oit_page_file_attatchment
 entity_type: node

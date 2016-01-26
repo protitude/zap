@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_tutorial
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: jlUzEz7JhTiVz0J6Hi_T4wJGasrG7ExWh-s1vz3aKGA
 id: node.oit_tutorial.field_tut_steps
 field_name: field_tut_steps
 entity_type: node

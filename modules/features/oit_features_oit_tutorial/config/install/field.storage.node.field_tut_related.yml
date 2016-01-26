@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: qiXLjPyx9iba8tCyJh3Hoe1_dycMQM2Ptij8gLVzG8Y
 id: node.field_tut_related
 field_name: field_tut_related
 entity_type: node

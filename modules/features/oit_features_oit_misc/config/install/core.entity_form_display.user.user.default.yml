@@ -2,68 +2,30 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_user_affiliation
-    - field.field.user.user.field_user_department
-    - field.field.user.user.field_user_name
-    - field.field.user.user.field_user_phone
     - field.field.user.user.user_picture
   module:
     - image
     - user
+_core:
+  default_config_hash: Aa0rnGnFvcpVmC8SGW68BNYde2tSrNzOmvfAzSeIUVI
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
   account:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
+    weight: -10
   contact:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-  field_user_affiliation:
-    type: string_textfield
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_user_department:
-    type: string_textfield
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_user_name:
-    type: string_textfield
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_user_phone:
-    type: string_textfield
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
+    weight: 5
   language:
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
+    weight: 0
   timezone:
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
+    weight: 6
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 5
+    weight: -1
 hidden: {  }

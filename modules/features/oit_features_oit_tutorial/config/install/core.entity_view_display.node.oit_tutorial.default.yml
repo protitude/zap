@@ -17,6 +17,8 @@ dependencies:
     - options
     - text
     - user
+_core:
+  default_config_hash: uCHBXH5B7tLzovbIxZPkYswIKKNLQ1TN17NtxTvFYcc
 id: node.oit_tutorial.default
 targetEntityType: node
 bundle: oit_tutorial

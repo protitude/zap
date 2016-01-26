@@ -20,6 +20,8 @@ third_party_settings:
     unpublish_required: false
     unpublish_revision: false
     use_vertical_tabs: true
+_core:
+  default_config_hash: aRBywZTs0uXfMj_Fc-jahCFINks8VEYl1-6dmAtA4fY
 name: 'Service Alert'
 type: service_alert
 description: 'Issue a service alert if there are any interruptions or issues with our services.'

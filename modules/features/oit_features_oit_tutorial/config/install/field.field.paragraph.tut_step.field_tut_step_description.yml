@@ -6,6 +6,8 @@ dependencies:
     - paragraphs.paragraphs_type.tut_step
   module:
     - text
+_core:
+  default_config_hash: CbP8NWdFsTbonlDoZylZOn6RkaJXaHDh8yE1_zCRlDA
 id: paragraph.tut_step.field_tut_step_description
 field_name: field_tut_step_description
 entity_type: paragraph

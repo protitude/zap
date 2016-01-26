@@ -1,5 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: amTuOfnyFPCko4u0qmV-d-FYuosm0e_cLZJNyVcy-58
 id: tut_step
 label: Step

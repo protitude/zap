@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_sa_title
     - node.type.service_alert
+_core:
+  default_config_hash: Ab2e7FhxNgk3cZsWH1wsRNP2k2cmLJZArjXykqQdaus
 id: node.service_alert.field_sa_title
 field_name: field_sa_title
 entity_type: node

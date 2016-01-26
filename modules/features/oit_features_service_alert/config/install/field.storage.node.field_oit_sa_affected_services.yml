@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: RYPPoCqjmVoPuHNrEk-PwUA05f4rui9BU7M1zUr6UgY
 id: node.field_oit_sa_affected_services
 field_name: field_oit_sa_affected_services
 entity_type: node

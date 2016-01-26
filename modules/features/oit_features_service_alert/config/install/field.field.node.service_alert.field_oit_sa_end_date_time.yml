@@ -6,6 +6,8 @@ dependencies:
     - node.type.service_alert
   module:
     - datetime
+_core:
+  default_config_hash: LLLyuRt8BUwmk2LtWUlfaEeYhs1M3f6KcSRmNZ5hV-I
 id: node.service_alert.field_oit_sa_end_date_time
 field_name: field_oit_sa_end_date_time
 entity_type: node

@@ -22,6 +22,8 @@ dependencies:
     - options
     - text
     - user
+_core:
+  default_config_hash: i3MjqgF_b6p6VJ0ynzD_iwuaJuS_4UMGUXDk-o4vrd8
 id: node.service_alert.default
 targetEntityType: node
 bundle: service_alert

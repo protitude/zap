@@ -5,6 +5,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
+  default_config_hash: hBWD4Bx-Et4hav8bc5TbON_LtiXjPxkYA5PkUPRL9Nk
 id: node.field_oit_faq
 field_name: field_oit_faq
 entity_type: node

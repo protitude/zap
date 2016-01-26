@@ -15,6 +15,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: U3-jTequkaBp0e9D2RthSWfFsV8MWIeA2iNqFqXb49E
 id: node.oit_tutorial.teaser
 targetEntityType: node
 bundle: oit_tutorial

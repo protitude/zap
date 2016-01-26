@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: 9_2K46IZL2YxO2JZihb0coHGsjzqlfNfdUuy12u6lZg
 id: node.field_oit_sa_info_vendor
 field_name: field_oit_sa_info_vendor
 entity_type: node

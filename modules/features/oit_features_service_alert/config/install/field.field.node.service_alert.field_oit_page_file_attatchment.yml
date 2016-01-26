@@ -6,6 +6,8 @@ dependencies:
     - node.type.service_alert
   module:
     - file
+_core:
+  default_config_hash: t3tkBB4QuAlQ2Wic34M0NZvACuwWRqDxlXGpd_9tq0Y
 id: node.service_alert.field_oit_page_file_attatchment
 field_name: field_oit_page_file_attatchment
 entity_type: node

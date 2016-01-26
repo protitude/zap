@@ -6,6 +6,8 @@ dependencies:
     - paragraphs.paragraphs_type.oit_faq
   module:
     - text
+_core:
+  default_config_hash: vRWB_fN3qK_WGV3iabymhyO1XvRHOBk95dFw3-f6uo0
 id: paragraph.oit_faq.field_oit_faq_body
 field_name: field_oit_faq_body
 entity_type: paragraph

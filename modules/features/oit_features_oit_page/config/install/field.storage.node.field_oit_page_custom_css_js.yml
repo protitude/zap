@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: dz8qQ7Vd-OKtrhqqlv5arR6seXD17y8NJLhS-9m0KJ0
 id: node.field_oit_page_custom_css_js
 field_name: field_oit_page_custom_css_js
 entity_type: node

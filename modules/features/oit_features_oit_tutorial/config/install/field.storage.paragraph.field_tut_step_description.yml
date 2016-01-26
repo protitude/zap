@@ -4,6 +4,8 @@ dependencies:
   module:
     - paragraphs
     - text
+_core:
+  default_config_hash: vhsGU6aNNWLrBTQEmAPUSkwZSq0_saDfAYydlODXcuc
 id: paragraph.field_tut_step_description
 field_name: field_tut_step_description
 entity_type: paragraph

@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: 8DVLydfytPqJjiygXL-ugSPVOawkpOKi6wVyMZoEslg
 id: user.field_user_phone
 field_name: field_user_phone
 entity_type: user

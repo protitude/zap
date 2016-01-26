@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: Wn2rITRzYd71XQD0vH0r5S0xspuorF6ZBJvIGnfnD9s
 id: node.field_oit_sa_scope
 field_name: field_oit_sa_scope
 entity_type: node

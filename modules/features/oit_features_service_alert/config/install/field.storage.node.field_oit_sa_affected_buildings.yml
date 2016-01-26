@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: Rc21ASATKVqvi3gBYE80dCCwXu0XeT7MRO2Tf_pwVnE
 id: node.field_oit_sa_affected_buildings
 field_name: field_oit_sa_affected_buildings
 entity_type: node

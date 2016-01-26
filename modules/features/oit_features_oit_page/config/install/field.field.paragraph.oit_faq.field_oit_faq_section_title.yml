@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_oit_faq_section_title
     - paragraphs.paragraphs_type.oit_faq
+_core:
+  default_config_hash: bhr9KhukBuES0KnjglH_Ifb_dgf9D14h5Zx_Zp1j5cE
 id: paragraph.oit_faq.field_oit_faq_section_title
 field_name: field_oit_faq_section_title
 entity_type: paragraph

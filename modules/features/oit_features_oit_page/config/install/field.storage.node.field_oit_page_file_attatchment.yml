@@ -4,6 +4,8 @@ dependencies:
   module:
     - file
     - node
+_core:
+  default_config_hash: mMX2JMzoYIgADNJUz7tAHl343ag2SgIUQAHs4XG39n8
 id: node.field_oit_page_file_attatchment
 field_name: field_oit_page_file_attatchment
 entity_type: node

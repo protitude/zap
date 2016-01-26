@@ -5,6 +5,8 @@ dependencies:
     - field.storage.node.field_oit_page_category
     - node.type.news
     - taxonomy.vocabulary.oit_categories
+_core:
+  default_config_hash: VwvfGhG8_T21EoPr5azqL-xF79g7T2pEOcyK6Y-Q0Cg
 id: node.news.field_oit_page_category
 field_name: field_oit_page_category
 entity_type: node

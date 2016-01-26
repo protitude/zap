@@ -6,6 +6,8 @@ dependencies:
     - node.type.oit_page
   module:
     - text
+_core:
+  default_config_hash: mAy8KKRc83s72JGLDqzcc7cp3R6AJuzhdc_ku3kQATI
 id: node.oit_page.body
 field_name: body
 entity_type: node

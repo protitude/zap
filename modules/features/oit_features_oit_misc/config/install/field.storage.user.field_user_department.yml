@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: up6dfJzSp-3LYNBoWUR6Ysf1rsNZ8OxBUHgeLC5RsCw
 id: user.field_user_department
 field_name: field_user_department
 entity_type: user

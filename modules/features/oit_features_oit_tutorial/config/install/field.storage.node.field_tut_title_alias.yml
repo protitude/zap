@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: Tyk-M9p5jMgxreen46_HED8cLMJY1IJ8eZZiogGtQTU
 id: node.field_tut_title_alias
 field_name: field_tut_title_alias
 entity_type: node

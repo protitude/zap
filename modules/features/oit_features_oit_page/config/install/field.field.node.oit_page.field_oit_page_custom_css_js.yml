@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_oit_page_custom_css_js
     - node.type.oit_page
+_core:
+  default_config_hash: OxZGr6UzEksVBO6RELGI79CsInuC55R9RsYrHvHFHHc
 id: node.oit_page.field_oit_page_custom_css_js
 field_name: field_oit_page_custom_css_js
 entity_type: node

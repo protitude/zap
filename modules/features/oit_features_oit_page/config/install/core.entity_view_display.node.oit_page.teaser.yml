@@ -16,6 +16,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: HkI3ruHDHStxjDAx8ctLdN7V1s8_-9gmWidIIFFkrdU
 id: node.oit_page.teaser
 targetEntityType: node
 bundle: oit_page

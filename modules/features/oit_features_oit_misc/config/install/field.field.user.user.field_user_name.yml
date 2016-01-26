@@ -5,6 +5,8 @@ dependencies:
     - field.storage.user.field_user_name
   module:
     - user
+_core:
+  default_config_hash: Mu2uTrU5gqFaqdIbbaWtS8MRA1Yse7ZaXO2ydFaTaSQ
 id: user.user.field_user_name
 field_name: field_user_name
 entity_type: user

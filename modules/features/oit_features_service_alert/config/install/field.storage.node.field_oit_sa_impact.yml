@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: B6UeQWqVWgKslMFgXO352PGBWQTIpRuhWUcuw97Eufw
 id: node.field_oit_sa_impact
 field_name: field_oit_sa_impact
 entity_type: node

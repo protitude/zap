@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: wL902fQz-SDwL2RHq2r32V13KpVg31ZVSkZu-yrUACU
 id: node.field_oit_news_status
 field_name: field_oit_news_status
 entity_type: node

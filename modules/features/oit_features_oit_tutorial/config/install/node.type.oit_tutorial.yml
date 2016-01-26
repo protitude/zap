@@ -20,6 +20,8 @@ third_party_settings:
     unpublish_required: false
     unpublish_revision: false
     use_vertical_tabs: true
+_core:
+  default_config_hash: mn29vauOzksnOP1Nc1K5gYsKXyXa_OLL6KGqjtOVgsw
 name: Tutorial
 type: oit_tutorial
 description: 'Use this content type to create a new step-by-step tutorial.'

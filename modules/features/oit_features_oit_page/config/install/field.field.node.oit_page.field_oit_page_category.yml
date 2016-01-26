@@ -5,6 +5,8 @@ dependencies:
     - field.storage.node.field_oit_page_category
     - node.type.oit_page
     - taxonomy.vocabulary.oit_categories
+_core:
+  default_config_hash: r1uP01MqlcCXb_0X29RTUgcxL0eRn3TPZw5WbkXWKCc
 id: node.oit_page.field_oit_page_category
 field_name: field_oit_page_category
 entity_type: node

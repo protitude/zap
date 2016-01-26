@@ -6,6 +6,8 @@ dependencies:
     - node.type.service_alert
   module:
     - text
+_core:
+  default_config_hash: I0ASoppLHHgRiHKYNkjqQSnyzbiffpw1W7LaU9uqDHc
 id: node.service_alert.field_oit_sa_impact
 field_name: field_oit_sa_impact
 entity_type: node
