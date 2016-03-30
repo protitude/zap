@@ -85,7 +85,7 @@ function zap_install() {
     'inline_entity_form',
     'kint',
     'masquerade',
-    'multiversion_ui',
+    'multiversion',
     'mollom',
     'oit_features_news',
     'oit_features_oit_misc',
