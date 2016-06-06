@@ -42,23 +42,6 @@
         {
           "type": "package",
           "package": {
-            "name": "drupal/redirect",
-            "version": "8.0",
-            "type": "drupal-module",
-            "dist": {
-              "url": "https://github.com/md-systems/redirect/archive/8.x-1.x.zip",
-              "type": "zip"
-            },
-            "source": {
-                "type": "vcs",
-                "url": "https://github.com/md-systems/redirect.git",
-                "reference": "8.x-1.x"
-            }
-          }
-        },
-        {
-          "type": "package",
-          "package": {
             "name": "drupal/patches",
             "version": "1.0.0",
             "type": "patches",
@@ -81,6 +64,7 @@
         }
     ],
     "require": {
+        "composer/installers": "^1.0.20",
         "drupal/admin_toolbar": "8.*",
         "drupal/admin_toolbar_tools": "8.*",
         "drupal/backup_migrate": "8.*",
@@ -125,25 +109,8 @@
         "library/garlicjs": "1.2.3",
         "library/select2": "4.0.1"
     },
-    "require-dev": {
-        "behat/mink": "~1.6",
-        "behat/mink-goutte-driver": "~1.2",
-        "jcalderonzumba/gastonjs": "^1.1@dev",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8",
-        "symfony/css-selector": "2.7.*"
-    },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
     "extra": {
         "installer-paths": {
             "modules/contrib/{$name}": ["type:drupal-module"],
