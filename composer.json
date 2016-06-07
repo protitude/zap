@@ -9,6 +9,9 @@
             "role": ""
         }
     ],
+    "config": {
+      "vendor-dir": "../../../../vendor"
+    },
     "repositories": [
         {
             "type": "composer",
@@ -113,6 +116,14 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "scripts": {
+      "post-install-cmd": [
+        "scripts/composer/post-install.sh"
+      ],
+      "post-update-cmd": [
+        "scripts/composer/post-install.sh"
+      ]
+    },
     "extra": {
         "installer-paths": {
             "modules/contrib/{$name}": ["type:drupal-module"],
