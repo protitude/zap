@@ -10,7 +10,7 @@
         }
     ],
     "config": {
-      "vendor-dir": "../../../zap-vendor"
+      "vendor-dir": "../../../../zap-vendor"
     },
     "repositories": [
         {
