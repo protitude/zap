@@ -72,6 +72,7 @@ function zap_install() {
     'coffee',
     'config',
     'contact_storage',
+    'context',
     'devel',
     'diff',
     'entity_reference_revisions',
