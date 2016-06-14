@@ -112,7 +112,8 @@
         "drupal/webform": "8.*",
 
         "library/garlicjs": "1.2.3",
-        "library/select2": "4.0.1"
+        "library/select2": "4.0.1",
+        "drupal/context": "8.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
