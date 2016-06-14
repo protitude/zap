@@ -30,6 +30,7 @@
           }
         },
         {
+        {
           "type": "package",
           "package": {
             "name": "library/select2",
@@ -37,6 +38,18 @@
             "type": "drupal-library",
             "source": {
               "url": "https://github.com/select2/select2.git",
+              "type": "git",
+                "reference": "master"
+            }
+          }
+        },
+          "type": "package",
+          "package": {
+            "name": "drupal/eva",
+            "version": "8.x-1.x",
+            "type": "drupal-modules",
+            "source": {
+              "url": "https://github.com/ahebrank/eva",
               "type": "git",
                 "reference": "master"
             }
@@ -82,6 +95,7 @@
         "drupal/entity": "8.x-1.x-dev",
         "drupal/entityqueue": "8.*",
         "drupal/entity_reference_revisions": "8.*",
+        "drupal/eva": "8.*",
         "drupal/extlink": "8.*",
         "drupal/features": "8.*",
         "drupal/fences": "8.*",
@@ -113,7 +127,11 @@
 
         "library/garlicjs": "1.2.3",
         "library/select2": "4.0.1",
-        "drupal/context": "8.*"
+        "drupal/context": "8.*",
+        "drupal/auto_entitylabel": "8.*",
+        "drupal/node_clone": "8.*",
+        "drupal/quicktabs": "8.*",
+        "drupal/shortcode": "8.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
