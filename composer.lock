@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0d7e508176e496112b34d8983e935047",
-    "content-hash": "a38a56dcc46ae9cafa06f61533b750c8",
+    "hash": "e9d82ea5c96c37533243b9dfecf63c0d",
+    "content-hash": "b25d8152c6f50650dbec3639faeb0408",
     "packages": [
         {
             "name": "composer/installers",
@@ -1307,6 +1307,32 @@
             "time": "2016-02-27 10:27:11"
         },
         {
+            "name": "drupal/eva",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/eva",
+                "reference": "540c940b1f699f0ff438ce25db5ed97df174dc18"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a Views display type that can be attached to entities.",
+            "homepage": "https://www.drupal.org/project/eva",
+            "time": "2013-03-09 23:09:04"
+        },
+        {
             "name": "drupal/extlink",
             "version": "8.1.0-alpha2",
             "source": {
@@ -1339,16 +1365,16 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta3",
+            "version": "8.3.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c"
+                "reference": "6d23d8e5b3e69c879e4b02c0e6ca52eba44260c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta3.zip",
-                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta5.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1374,7 +1400,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-04-07 19:57:25"
+            "time": "2016-06-09 14:12:34"
         },
         {
             "name": "drupal/fences",
@@ -2818,16 +2844,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "cb1ce51f817af9bbf400c88e8dcebcbf9a097077"
+                "reference": "170aa5cb35b29fccafbf5ea63487c013f396fdc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/cb1ce51f817af9bbf400c88e8dcebcbf9a097077",
-                "reference": "cb1ce51f817af9bbf400c88e8dcebcbf9a097077",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/170aa5cb35b29fccafbf5ea63487c013f396fdc9",
+                "reference": "170aa5cb35b29fccafbf5ea63487c013f396fdc9",
                 "shasum": ""
             },
             "require": {
@@ -2879,7 +2905,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2016-04-11 13:54:57"
+            "time": "2016-05-10 14:11:45"
         },
         {
             "name": "mollom/client",

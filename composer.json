@@ -30,7 +30,6 @@
           }
         },
         {
-        {
           "type": "package",
           "package": {
             "name": "library/select2",
@@ -43,15 +42,16 @@
             }
           }
         },
+        {
           "type": "package",
           "package": {
             "name": "drupal/eva",
-            "version": "8.x-1.x",
-            "type": "drupal-modules",
+            "version": "8.0",
+            "type": "drupal-module",
             "source": {
               "url": "https://github.com/ahebrank/eva",
               "type": "git",
-                "reference": "master"
+                "reference": "8.x-1.x"
             }
           }
         },
