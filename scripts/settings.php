@@ -20,7 +20,7 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'zap';
-$config_directories['sync'] = 'sites/default/files/config_4eJmMXr6BeZgx7dcsXSb9SDTZ6HzGJnNpyJia3ymYnLKtS_xdLdg_f3A4GB2HNJDg3BWE2ODNQ/sync';
+$config_directories['sync'] = '../config/sync';
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
