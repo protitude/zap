@@ -1,10 +1,10 @@
 zap.selectivity:
   version: 1.x
   js:
-    /libraries/select2/js/select2.full.min.js: {}
+    ../../../libraries/select2/dist/js/select2.full.min.js: {}
   css:
     theme:
-      /libraries/select2/css/select2.min.css: {}
+      ../../../libraries/select2/dist/css/select2.min.css: {}
   dependencies:
     - core/jquery
 
