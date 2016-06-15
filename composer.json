@@ -115,6 +115,7 @@
         "drupal/multiversion": "8.x-1.x-dev",
         "drupal/mollom": "8.*",
         "drupal/omega": "8.*",
+        "drupal/patternlab": "8.*",
         "drupal/paragraphs": "8.*",
         "drupal/pathauto": "8.*",
         "drupal/persistent_login": "8.*",
