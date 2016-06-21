@@ -112,6 +112,7 @@
         "drupal/mailsystem": "8.*",
         "drupal/masquerade": "8.*",
         "drupal/migrate_manifest": "8.*",
+        "drupal/migrate_upgrade": "8.*",
         "drupal/multiversion": "8.x-1.x-dev",
         "drupal/mollom": "8.*",
         "drupal/omega": "8.*",

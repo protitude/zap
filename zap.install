@@ -90,7 +90,7 @@ function zap_install() {
     'inline_entity_form',
     'kint',
     'masquerade',
-    'multiversion',
+    //'multiversion',
     'mollom',
     'node_clone',
     'paragraphs',
@@ -101,7 +101,7 @@ function zap_install() {
     'scheduler',
     'shortcode',
     'token',
-    'trash',
+    //'trash',
   );
   \Drupal::service('module_installer')->install($module_list, TRUE);
 }

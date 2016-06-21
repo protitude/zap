@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "19b6bdc32b85419b74137766a7af9815",
-    "content-hash": "ebd534dbd6c7096d2bc1b457d2d72f31",
+    "hash": "a98fd4ff18ec830813dc9881ed61aa67",
+    "content-hash": "3acde8debae4348fc70df702d0baf9f4",
     "packages": [
         {
             "name": "composer/installers",
@@ -1963,6 +1963,42 @@
             "description": "Tools to assist in developing and running migrations.",
             "homepage": "https://www.drupal.org/project/migrate_tools",
             "time": "2016-05-05 23:01:53"
+        },
+        {
+            "name": "drupal/migrate_upgrade",
+            "version": "8.2.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate_upgrade.git",
+                "reference": "e0c6a0ce859346ae61462070e98dc10f816c955f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_upgrade-8.x-2.0-beta1.zip",
+                "reference": "e0c6a0ce859346ae61462070e98dc10f816c955f",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/dblog": "8.*",
+                "drupal/migrate": "8.*",
+                "drupal/migrate_drupal": "8.*",
+                "drupal/migrate_plus": "8.*",
+                "drupal/system": ">=8.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Drush support for direct upgrades from older Drupal versions.",
+            "homepage": "https://www.drupal.org/project/migrate_upgrade",
+            "time": "2016-04-14 20:50:52"
         },
         {
             "name": "drupal/mollom",

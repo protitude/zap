@@ -1,0 +1,101 @@
+uuid: 6753ec2b-d0f0-4615-9e3d-9a7878b33f1f
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_service
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Node revisions (Service)'
+source:
+  plugin: d7_node_revision
+  node_type: service
+process:
+  nid: nid
+  vid: vid
+  type: type
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  taxonomy_vocabulary_11:
+    plugin: iterator
+    source: taxonomy_vocabulary_11
+    process:
+      target_id: tid
+  body: body
+  upload:
+    plugin: iterator
+    source: upload
+    process:
+      target_id: fid
+      display: display
+      description: description
+  field_related_content: field_related_content
+  field_service_overview: field_service_overview
+  field_service_features: field_service_features
+  field_benefits: field_benefits
+  field_service_cost: field_service_cost
+  field_service_who_can_get_it: field_service_who_can_get_it
+  field_service_how_to_get_it: field_service_how_to_get_it
+  field_service_related_projects: field_service_related_projects
+  field_service_related_policies: field_service_related_policies
+  field_services_related: field_services_related
+  field_service_related_projectsnr: field_service_related_projectsnr
+  field_services_misc: field_services_misc
+  field_access_control:
+    plugin: iterator
+    source: field_access_control
+    process:
+      target_id: tid
+  field_faq: field_faq
+  field_faq_section_title:
+    plugin: iterator
+    source: field_faq_section_title
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - d6_filter_format
+            - d7_filter_format
+          source: format
+  field_oit_category:
+    plugin: iterator
+    source: field_oit_category
+    process:
+      target_id: tid
+  field_service_main_page: field_service_main_page
+destination:
+  plugin: 'entity_revision:node'
+migration_dependencies:
+  required:
+    59: upgrade_d7_node_blog
+    60: upgrade_d7_node_news
+    61: upgrade_d7_node_page
+    62: upgrade_d7_node_security_notice
+    63: upgrade_d7_node_service
+    64: upgrade_d7_node_service_alert
+    65: upgrade_d7_node_tutorial
+    66: upgrade_d7_node_webform
+  optional: {  }

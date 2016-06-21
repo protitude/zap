@@ -1,0 +1,21 @@
+uuid: 1c3e8a38-6cd2-48e1-967c-e282be6808ce
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_menu
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: Menus
+source:
+  plugin: menu
+process:
+  id: menu_name
+  label: title
+  description: description
+destination:
+  plugin: 'entity:menu'
+migration_dependencies:
+  required: {  }
+  optional: {  }

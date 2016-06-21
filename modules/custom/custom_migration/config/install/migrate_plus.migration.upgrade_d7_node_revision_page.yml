@@ -1,0 +1,91 @@
+uuid: b0a460ca-9a3e-4ce7-addb-44020dce7b76
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_page
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Node revisions (Page)'
+source:
+  plugin: d7_node_revision
+  node_type: page
+process:
+  nid: nid
+  vid: vid
+  type: type
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  taxonomyextra:
+    plugin: iterator
+    source: taxonomyextra
+    process:
+      target_id: tid
+  body: body
+  upload:
+    plugin: iterator
+    source: upload
+    process:
+      target_id: fid
+      display: display
+      description: description
+  field_related_content: field_related_content
+  field_overview: field_overview
+  field_access_control:
+    plugin: iterator
+    source: field_access_control
+    process:
+      target_id: tid
+  field_page_footer: field_page_footer
+  field_faq: field_faq
+  field_faq_section_title:
+    plugin: iterator
+    source: field_faq_section_title
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - d6_filter_format
+            - d7_filter_format
+          source: format
+  field_oit_category:
+    plugin: iterator
+    source: field_oit_category
+    process:
+      target_id: tid
+destination:
+  plugin: 'entity_revision:node'
+migration_dependencies:
+  required:
+    59: upgrade_d7_node_blog
+    60: upgrade_d7_node_news
+    61: upgrade_d7_node_page
+    62: upgrade_d7_node_security_notice
+    63: upgrade_d7_node_service
+    64: upgrade_d7_node_service_alert
+    65: upgrade_d7_node_tutorial
+    66: upgrade_d7_node_webform
+  optional: {  }
