@@ -36,7 +36,7 @@ function zap_initialize_theme() {
  * Implements hook_menu().
  */
 function zap_initialize_menu() {
-  $items['oitfront'] = array(
+  $items['front'] = array(
     'title' => 'Office of Information Technology',
     'access arguments' => array('access content'),
   );
