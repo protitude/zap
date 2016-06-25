@@ -51,7 +51,7 @@ process:
     source: taxonomy_vocabulary_11
     process:
       target_id: tid
-  field_news_archive: field_news_archive
+  field_oit_news_status: field_news_archive
   field_oit_category:
     plugin: iterator
     source: field_oit_category
