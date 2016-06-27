@@ -93,21 +93,23 @@ function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
       );
       $form['field_oit_page_custom_css_js']['#group'] = 'oit_page_css_js';
       // ksm($form);
-      // Show/hide fields that apply/don't apply to the service type.
-      if ($_REQUEST["type"] == "service") {
-        $form['oit_page_extras']['#title'] = t('Service Extras');
-        $form['field_oit_page_sn_level']['#access'] = FALSE;
-        $form['body']['widget'][0]['#default_value'] = '<h2>Features</h2><p>Features here.</p><h2>Related Policies</h2><p>Policies here</p><h2>Benefits</h2><p>Benefits here</p><h2>Cost</h2><p>Cost here</p><h2>Who can get it</h2><p>Who can get it here</p><h2>How to get it</h2><p>how to get it here</p><h2>Related Policies</h2><p>related policies here</p>';
+      if ( isset($_REQUEST["type"]) ) {
+        // Show/hide fields that apply/don't apply to the service type.
+        if ($_REQUEST["type"] == "service") {
+          $form['oit_page_extras']['#title'] = t('Service Extras');
+          $form['field_oit_page_sn_level']['#access'] = FALSE;
+          $form['body']['widget'][0]['#default_value'] = '<h2>Features</h2><p>Features here.</p><h2>Related Policies</h2><p>Policies here</p><h2>Benefits</h2><p>Benefits here</p><h2>Cost</h2><p>Cost here</p><h2>Who can get it</h2><p>Who can get it here</p><h2>How to get it</h2><p>how to get it here</p><h2>Related Policies</h2><p>related policies here</p>';
+        }
+        // Show/hide fields that apply/don't apply to the security notice type.
+        if ($_REQUEST["type"] == "security_notice") {
+          $form['oit_page_extras']['#title'] = t('Security Notice Extras');
+          $form['field_oit_page_main_service']['#access'] = FALSE;
+          $form['field_oit_page_related_content']['#access'] = FALSE;
+          $form['field_oit_faq']['#access'] = FALSE;
+          $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Security Bulletin Name</h2><p>Security Bulletin Name here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
+        }
       }
-      // Show/hide fields that apply/don't apply to the security notice type.
-      if ($_REQUEST["type"] == "security_notice") {
-        $form['oit_page_extras']['#title'] = t('Security Notice Extras');
-        $form['field_oit_page_main_service']['#access'] = FALSE;
-        $form['field_oit_page_related_content']['#access'] = FALSE;
-        $form['field_oit_faq']['#access'] = FALSE;
-        $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Security Bulletin Name</h2><p>Security Bulletin Name here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
-      }
-    break;
+      break;
     case 'node_oit_tutorial_form':
     case 'node_oit_tutorial_edit_form':
       $form['oit_page_extras'] = array(
