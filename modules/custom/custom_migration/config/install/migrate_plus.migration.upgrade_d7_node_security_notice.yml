@@ -39,9 +39,9 @@ process:
       display: display
       description: description
   field_related_content: field_related_content
-  field_security_notice_aff_soft: field_security_notice_aff_soft
-  field_security_notice_add_info: field_security_notice_add_info
-  field_security_notice_level_d7: field_security_notice_level_d7
+  body: field_security_notice_aff_soft
+  body: field_security_notice_add_info
+  field_oit_page_sn_level: field_security_notice_level_d7
 destination:
   plugin: 'entity:node'
 migration_dependencies:

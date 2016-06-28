@@ -13,7 +13,9 @@ source:
 process:
   nid: nid
   vid: vid
-  type: type
+  type:
+    plugin: default_value
+    default_value: oit_page
   langcode:
     plugin: default_value
     source: language
@@ -39,7 +41,7 @@ process:
   field_related_content: field_related_content
   field_security_notice_aff_soft: field_security_notice_aff_soft
   field_security_notice_add_info: field_security_notice_add_info
-  field_security_notice_level_d7: field_security_notice_level_d7
+  field_oit_page_sn_level: field_security_notice_level_d7
 destination:
   plugin: 'entity_revision:node'
 migration_dependencies:

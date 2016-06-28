@@ -6,7 +6,6 @@ dependencies:
   - entity_reference_revisions
   - file
   - image
-  - oit_features_oit_misc
   - options
   - paragraphs
   - path

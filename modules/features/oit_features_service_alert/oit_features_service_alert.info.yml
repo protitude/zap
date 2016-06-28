@@ -8,8 +8,6 @@ dependencies:
   - file
   - menu_ui
   - node
-  - oit_features_oit_page
-  - oit_features_service_alert
   - options
   - path
   - scheduler

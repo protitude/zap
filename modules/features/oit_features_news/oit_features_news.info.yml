@@ -7,9 +7,6 @@ dependencies:
   - image
   - menu_ui
   - node
-  - oit_features_news
-  - oit_features_oit_misc
-  - oit_features_oit_page
   - options
   - path
   - scheduler

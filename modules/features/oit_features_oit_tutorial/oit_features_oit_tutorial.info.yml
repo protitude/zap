@@ -8,9 +8,6 @@ dependencies:
   - image
   - menu_ui
   - node
-  - oit_features_oit_misc
-  - oit_features_oit_page
-  - oit_features_oit_tutorial
   - options
   - paragraphs
   - path

@@ -87,7 +87,7 @@ process:
     source: field_oit_category
     process:
       target_id: tid
-  field_service_main_page: field_service_main_page
+  field_oit_page_main_service: field_service_main_page
 destination:
   plugin: 'entity:node'
 migration_dependencies:

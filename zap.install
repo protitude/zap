@@ -98,7 +98,7 @@ function zap_install() {
     'persistent_login',
     'redirect',
     'responsive_image',
-    'scheduler',
+    //'scheduler',
     'shortcode',
     'token',
     //'trash',
