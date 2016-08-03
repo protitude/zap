@@ -68,5 +68,4 @@ migration_dependencies:
     63: upgrade_d7_node_service
     64: upgrade_d7_node_service_alert
     65: upgrade_d7_node_tutorial
-    66: upgrade_d7_node_webform
   optional: {  }

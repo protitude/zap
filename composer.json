@@ -126,6 +126,7 @@
         "drupal/trash": "8.*",
         "drupal/views_accordion": "8.*",
         "drupal/webform": "8.*",
+        "drupal/yamlform": "8.*",
 
         "library/garlicjs": "1.2.3",
         "library/select2": "4.0.1",
