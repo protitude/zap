@@ -95,6 +95,7 @@
         "drupal/entity": "8.x-1.x-dev",
         "drupal/entityqueue": "8.*",
         "drupal/entity_reference_revisions": "8.*",
+        "drupal/eform": "8.*",
         "drupal/views_eva": "8.1",
         "drupal/extlink": "8.*",
         "drupal/features": "8.*",
