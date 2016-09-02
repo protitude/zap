@@ -87,6 +87,7 @@
         "drupal/big_pipe": "8.*",
         "drupal/coffee": "8.*",
         "drupal/colorbox": "8.*",
+        "drupal/components": "8.*",
         "drupal/contact_storage": "8.*",
         "drupal/devel": "8.*",
         "drupal/diff": "8.*",
