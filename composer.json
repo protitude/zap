@@ -136,7 +136,8 @@
         "drupal/auto_entitylabel": "8.*",
         "drupal/node_clone": "8.*",
         "drupal/quicktabs": "8.*",
-        "drupal/shortcode": "8.*"
+        "drupal/shortcode": "8.*",
+        "drupal/ctools": "8.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
