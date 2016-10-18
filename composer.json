@@ -1,16 +1,36 @@
 {
     "name": "zap/zap_initialize",
     "description": "Project template for zap",
-    "type": "project",
+    "type": "drupal-profile",
     "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "protitude",
+            "role": "c0deM0nkey"
         }
     ],
+    "require-dev": {
+        "drush/drush": "^9.0",
+        "drupal/drupal-extension": "^3.2",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "jakoch/phantomjs-installer": "1.9.8",
+        "behat/behat": "^3.0",
+        "drupal/coder": "8.*",
+        "phing/phing": "^2.14",
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/devel": "^8.0.0",
+        "squizlabs/php_codesniffer": "2.*"
+    },
     "config": {
-      "vendor-dir": "../../../../zap-vendor"
+        "bin-dir": "bin/"
     },
     "repositories": [
         {
@@ -73,14 +93,66 @@
                       "url": "https://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch"
                     }
                   }
+                },
+                "drupal/panelizer": {
+                    "2747739 - Mega Patch":
+                    "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
+                    "2701349 - Generate new UUIDs for displays when switching from default to field storage":
+                    "https://www.drupal.org/files/issues/2701349-2.patch",
+                    "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer":
+                    "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
+                    "2664682 - Implement admin UI for editing Panelizer defaults":
+                    "https://www.drupal.org/files/issues/2664682-55.patch",
+                    "2793841 - Properly integrate with Panels IPE":
+                    "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
+                },
+                "drupal/panels": {
+                    "2793801 - Allow modules to influence the IPE tempstore ID":
+                    "https://www.drupal.org/files/issues/2793801-9.patch"
+                },
+                "drupal/scheduled_updates": {
+                    "2674874 - Issue saving Schedule Update Type form":
+                    "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch",
+                    "2720169 - Scheduled Update Type entity should not have canonical link template":
+                    "https://www.drupal.org/files/issues/scheduled_updates-no-canonical-link-for-update-type.patch"
+                },
+                "drupal/workbench_moderation": {
+                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes":
+                    "https://www.drupal.org/files/issues/2668006-2.patch",
+                    "2780691 - Incorrect EntityRevision paramconverter service definition causes a fatal error":
+                    "https://www.drupal.org/files/issues/workbench_moderation-invalid_service_definition.patch"
+                },
+                "drush/drush": {
+                    "Adding composer.json support to make-convert command":
+                    "https://github.com/drush-ops/drush/commit/ce82b946d49b09cd33da5ca84feb24a6c35f8f8e.patch",
+                    "The batch table may not exist by the time _drush_backend_batch_process() is called in 8.x-1.x":
+                    "https://github.com/drush-ops/drush/commit/c389aebb7d3e26ff0f544684d8b3ec3528107e55.diff"
+                },
+                "drupal/metatag": {
+                    "2786795 - DrupalConsole integration breaks Drush":
+                    "https://www.drupal.org/files/issues/metatag-deactivate_drupalconsole_services_0.patch"
+                },
+                "drupal/workspace": {
+                    "2791789 - Workspace should report conflicts before replication":
+                    "https://www.drupal.org/files/issues/2791789-34.patch"
+                },
+                "drupal/replication": {
+                    "2814055 - Allow modules to react to replication events":
+                    "https://www.drupal.org/files/issues/2814055-2.patch"
+                },
+                "drupal/core": {
+                    "2818031 - Trailing slashes can cause FileSystem::mkdir() to return a false negative":
+                    "https://www.drupal.org/files/issues/2818031-6.patch"
                 }
               }
             }
           }
-        }
+        },
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     ],
     "require": {
-        "composer/installers": "^1.0.20",
+        "composer/installers": "^1.0",
+        "cweagans/composer-patches": "^1.5.0",
         "drupal/admin_toolbar": "8.*",
         "drupal/admin_toolbar_tools": "8.*",
         "drupal/backup_migrate": "8.*",
@@ -88,18 +160,23 @@
         "drupal/coffee": "8.*",
         "drupal/colorbox": "8.*",
         "drupal/components": "8.*",
+        "drupal/config_update": "^8.1.1",
         "drupal/contact_storage": "8.*",
+        "drupal/core": "~8.2.0",
+        "drupal/ctools": "8.3.0-alpha27",
         "drupal/devel": "8.*",
         "drupal/diff": "8.*",
         "drupal/direct_queue": "8.*",
         "drupal/editor_file": "8.*",
-        "drupal/entity": "8.x-1.x-dev",
-        "drupal/entityqueue": "8.*",
-        "drupal/entity_reference_revisions": "8.*",
         "drupal/eform": "8.*",
-        "drupal/views_eva": "8.1",
+        "drupal/embed": "^8.1.0",
+        "drupal/entity": "8.x-1.x-dev",
+        "drupal/entity_browser": "8.1.0-alpha9",
+        "drupal/entity_embed": "^8.1.0",
+        "drupal/entity_reference_revisions": "8.*",
+        "drupal/entityqueue": "8.*",
         "drupal/extlink": "8.*",
-        "drupal/features": "8.*",
+        "drupal/features": "^8.3.0",
         "drupal/fences": "8.*",
         "drupal/field_collection": "8.*",
         "drupal/field_group": "8.*",
@@ -107,27 +184,45 @@
         "drupal/google_analytics_lite": "8.*",
         "drupal/honeypot": "8.*",
         "drupal/inline_entity_form": "8.x-1.x-dev",
+        "drupal/inline_entity_form": "^8.1.0",
         "drupal/key": "8.*",
+        "drupal/key_value": "^8.1.0",
         "drupal/ldap": "8.*",
         "drupal/libraries": "8.*",
         "drupal/linkit": "8.*",
         "drupal/mailsystem": "8.*",
         "drupal/masquerade": "8.*",
+        "drupal/media_entity": "^8.1.0",
+        "drupal/media_entity_document": "^8.1.0",
+        "drupal/media_entity_image": "^8.1.0",
+        "drupal/media_entity_instagram": "^8.1.0",
+        "drupal/media_entity_twitter": "^8.1.2",
+        "drupal/metatag": "8.1.0-beta10",
         "drupal/migrate_manifest": "8.*",
         "drupal/migrate_upgrade": "8.*",
-        "drupal/multiversion": "8.x-1.x-dev",
         "drupal/mollom": "8.*",
+        "drupal/multiversion": "8.1.0-alpha10",
         "drupal/omega": "8.*",
-        "drupal/patternlab": "8.*",
+        "drupal/page_manager": "8.1.0-alpha24",
+        "drupal/panelizer": "8.3.0-alpha2",
+        "drupal/panels": "8.3.0-beta5",
         "drupal/paragraphs": "8.*",
-        "drupal/pathauto": "8.*",
+        "drupal/pathauto": "^8.1.0",
+        "drupal/patternlab": "8.*",
         "drupal/persistent_login": "8.*",
         "drupal/redirect": "8.*",
+        "drupal/replication": "8.1.0-alpha4",
+        "drupal/scheduled_updates": "8.1.0-alpha5",
         "drupal/scheduler": "8.*",
-        "drupal/token": "8.*",
+        "drupal/token": "^8.1.0",
         "drupal/trash": "8.*",
+        "drupal/video_embed_field": "^8.1.0",
         "drupal/views_accordion": "8.*",
+        "drupal/views_eva": "8.1",
+        "drupal/views_infinite_scroll": "^8.1.1",
         "drupal/webform": "8.*",
+        "drupal/workbench_moderation": "8.1.1",
+        "drupal/workspace": "8.1.0-alpha3",
         "drupal/yamlform": "8.*",
 
         "library/garlicjs": "1.2.3",
@@ -138,22 +233,5 @@
         "drupal/quicktabs": "8.*",
         "drupal/shortcode": "8.*",
         "drupal/ctools": "8.*"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-      "post-install-cmd": [
-        "scripts/composer/post-install.sh"
-      ],
-      "post-update-cmd": [
-        "scripts/composer/post-install.sh"
-      ]
-    },
-    "extra": {
-        "installer-paths": {
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "libraries/{$name}": ["type:drupal-library"]
-        }
     }
 }
